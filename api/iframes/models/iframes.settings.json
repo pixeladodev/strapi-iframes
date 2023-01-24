@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iframes",
+  "info": {
+    "name": "Iframes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primary_color": {
+      "type": "string",
+      "default": "#E9540D"
+    },
+    "dealer": {
+      "model": "dealers",
+      "via": "iframes"
+    },
+    "iframe_type": {
+      "via": "iframes",
+      "model": "iframe-type"
+    },
+    "width": {
+      "type": "integer",
+      "default": 500
+    },
+    "page": {
+      "type": "integer",
+      "default": 0
+    },
+    "text_color": {
+      "type": "string",
+      "default": "#192B43"
+    },
+    "background_color": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "primary_color_hover": {
+      "type": "string",
+      "default": "#BA430A"
+    },
+    "primary_color_content": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "neutral_color": {
+      "type": "string",
+      "default": "#1A3E5B"
+    },
+    "neutral_color_hover": {
+      "type": "string",
+      "default": "#153249"
+    },
+    "neutral_color_content": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "base_200_color": {
+      "type": "string",
+      "default": "#E6E6E6"
+    },
+    "base_300_color": {
+      "type": "string",
+      "default": "#CFCFCF"
+    },
+    "input_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "hr_color": {
+      "type": "string",
+      "default": "#d6d6d6"
+    },
+    "received_title": {
+      "type": "string",
+      "default": "Formulario recibido"
+    },
+    "received_body": {
+      "type": "string",
+      "default": "Te contactaremos"
+    },
+    "min_cuota": {
+      "type": "biginteger",
+      "default": "50000"
+    },
+    "max_cuota": {
+      "type": "biginteger",
+      "default": "1000000"
+    },
+    "min_foot": {
+      "type": "integer",
+      "default": 0
+    },
+    "max_foot": {
+      "type": "integer",
+      "default": 5000000
+    },
+    "redirect": {
+      "type": "boolean",
+      "default": false
+    },
+    "include_price": {
+      "type": "boolean",
+      "default": true
+    },
+    "redirect_url": {
+      "type": "string",
+      "default": "https://tupagina.com/buscar?precio="
+    },
+    "border_color": {
+      "type": "string",
+      "default": "#d6d6d6"
+    },
+    "border_style": {
+      "type": "string",
+      "default": "solid"
+    },
+    "border_width": {
+      "type": "string",
+      "default": "1"
+    }
+  }
+}

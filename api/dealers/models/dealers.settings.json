@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers",
+  "info": {
+    "name": "dealers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "dealers",
+      "dominant": true
+    },
+    "iframes": {
+      "via": "dealer",
+      "collection": "iframes"
+    }
+  }
+}

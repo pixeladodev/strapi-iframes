@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iframe_types",
+  "info": {
+    "name": "Iframe_type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "iframes": {
+      "via": "iframe_type",
+      "collection": "iframes"
+    }
+  }
+}

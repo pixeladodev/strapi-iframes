@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/iframes",
+      "handler": "iframes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/iframes/count",
+      "handler": "iframes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/iframes/:id",
+      "handler": "iframes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/iframes",
+      "handler": "iframes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/iframes/:id",
+      "handler": "iframes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/iframes/:id",
+      "handler": "iframes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
